@@ -1,15 +1,14 @@
 package aoc.orihara.year2023;
 
+import aoc.orihara.Utils;
+
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProblemDay3 {
 
-    private final static String TO_RESOURCES = "/src/main/resources/";
     private final static String NOT_SYMBOLS = "1234567890.";
 
     class Pair {
@@ -23,12 +22,11 @@ public class ProblemDay3 {
     }
 
 
-    public void runProblem1() throws IOException {
+    public void runProblem1() throws Exception {
 
         int result = 0;
 
-        final File file = new File(System.getProperty("user.dir") + TO_RESOURCES + "day3.input");
-        final BufferedReader br = new BufferedReader(new FileReader(file));
+        final BufferedReader br = Utils.getFile2023("day3.input");
 
         // load structure
         final List<List<Pair>> fullProblem = new ArrayList<>();

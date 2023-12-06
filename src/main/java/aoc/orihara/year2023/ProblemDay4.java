@@ -1,26 +1,21 @@
 package aoc.orihara.year2023;
 
+import aoc.orihara.Utils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
 public class ProblemDay4 {
-    private final static String TO_RESOURCES = "/../../git/AdventOfCode/src/main/resources/";
 
-    public void runProblem1() throws IOException {
+    public void runProblem1() throws Exception {
 
         double result = 0;
 
-        final File file = new File(System.getProperty("user.dir") + TO_RESOURCES + "day4.input");
-        final BufferedReader br = new BufferedReader(new FileReader(file));
-
+        final BufferedReader br = Utils.getFile2023("day4.input");
 
         String line;
         while ((line = br.readLine()) != null) {
@@ -67,13 +62,11 @@ public class ProblemDay4 {
         // 52896 // 26426
     }
 
-    public void runProblem2() throws IOException {
+    public void runProblem2() throws Exception {
 
         int result = 0;
 
-        final File file = new File(System.getProperty("user.dir") + TO_RESOURCES + "day4.input");
-        final BufferedReader br = new BufferedReader(new FileReader(file));
-
+        final BufferedReader br = Utils.getFile2023("day4.input");
 
         final List<Integer> numberOfExtraCards = new ArrayList<>();
         for (int i = 0; i < 250; i++) { // to lazy to read the file 2 times OR catch OutOfBoundsException

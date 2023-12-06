@@ -1,23 +1,19 @@
 package aoc.orihara.year2023;
 
+import aoc.orihara.Utils;
+
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class ProblemDay2 {
-    private final static String TO_RESOURCES = "/src/main/resources/";
 
-    public void runProblem1() throws IOException {
+    public void runProblem1() throws Exception {
         final int redBag = 12;
         final int greenBag = 13;
         final int blueBag = 14;
 
         int result = 0;
 
-        final File file = new File(System.getProperty("user.dir") + TO_RESOURCES + "day2.input");
-        final BufferedReader br = new BufferedReader(new FileReader(file));
-
+        final BufferedReader br = Utils.getFile2023("day2.input");
 
         String line;
         while ((line = br.readLine()) != null) {
@@ -58,13 +54,11 @@ public class ProblemDay2 {
         return true;
     }
 
-    public void runProblem2() throws IOException {
+    public void runProblem2() throws Exception {
 
         int result = 0;
 
-        final File file = new File(System.getProperty("user.dir") + TO_RESOURCES + "day2.input");
-        final BufferedReader br = new BufferedReader(new FileReader(file));
-
+        final BufferedReader br = Utils.getFile2023("day2.input");
 
         String line;
         while ((line = br.readLine()) != null) {
