@@ -1,20 +1,22 @@
 package aoc.orihara;
 
 
-import aoc.orihara.year2023.ProblemDay5part2;
+import aoc.orihara.year2023.ProblemDay8part2V2;
 
 public class Main {
 
     public static void main(final String[] args) {
 
         System.out.printf("\n\n");
+        long startTime = System.currentTimeMillis();
 
         try {
-            new ProblemDay5part2().runProblem2();
+            new ProblemDay8part2V2().runProblem();
         } catch (final Throwable e) {
             throw new RuntimeException(e);
         }
 
+        System.out.println("Time: " + (System.currentTimeMillis() - startTime));
         System.out.printf("\n\nTHE END");
     }
 }
