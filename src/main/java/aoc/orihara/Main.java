@@ -1,7 +1,7 @@
 package aoc.orihara;
 
 
-import aoc.orihara.year2023.ProblemDay8part2V2;
+import aoc.orihara.year2023.ProblemDay9part2;
 
 public class Main {
 
@@ -11,7 +11,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
 
         try {
-            new ProblemDay8part2V2().runProblem();
+            new ProblemDay9part2().runProblem();
         } catch (final Throwable e) {
             throw new RuntimeException(e);
         }
