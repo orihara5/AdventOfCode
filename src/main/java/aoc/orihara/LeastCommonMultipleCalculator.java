@@ -46,7 +46,7 @@ public class LeastCommonMultipleCalculator {
         return currentNumberList.stream().anyMatch(aLong -> aLong != 1);
     }
 
-    public List<Long> getListOfPrime(Long maxSearch) {
+    public static List<Long> getListOfPrime(Long maxSearch) {
         List<Long> result = new ArrayList<>();
         result.add(2L);
         result.add(3L);
